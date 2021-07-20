@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nightswatch-Application-Form</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">Nightswatch Application Form</h1>
+              <p id="description" class="description text-center">
+                Fill your details to apply for the Nightswatch and become a CROW! 
+              </p>
+            </header>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Raven-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="jonsnow@winterfell.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number"
+                  >Age<span class="clue">(optional)</span></label
+                >
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"
+                />
+              </div>
+              <div class="form-group">
+                <p>Reason for being exiled into Nightswatch</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select current role</option>
+                  <option value="student">Bastard</option>
+                  <option value="job">Wildling</option>
+                  <option value="learner">Treachury</option>
+                  <option value="preferNo">Discarded by your house</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>How do you intent to serve here?</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="ranger"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Ranger</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="builder"
+                    type="radio"
+                    class="input-radio"
+                  />Builder</label
+                >
+          
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="steward"
+                    type="radio"
+                    class="input-radio"
+                  />Steward</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  What would you do if you saw a whitewalker?
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="shit-yourself"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Shit Yourself</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="Call-momma"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Cry for your mother</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Run-away"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Run away</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Fight-for-glory"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Be stupid enough to fight for my life</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Blow-horns"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Blow horns and warn others</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Burn-it"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Burn it to ashes</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="rock-scissors"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Play rock paper scissors with it</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Ale"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Talk about after-life over a good ol' ale</label
+                >
+          
+              <div class="form-group">
+                <p>Any other actions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Seal with wax
+                </button>
+              </div>
+            </form>
+          </div>    
+    </body>
+</html>
